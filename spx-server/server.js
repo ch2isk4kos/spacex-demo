@@ -7,7 +7,7 @@ const app = express();
 
 app.use("/graphql", graphqlHTTP({
   schema: schema,
-  graphiql: true 
+  graphiql: true	// @TODO: set to false in prod. 
 }));
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
