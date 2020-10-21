@@ -11,3 +11,5 @@ app.use("/graphql", graphqlHTTP({
 }));
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
+// go to: http://localhost:3000/graphql
