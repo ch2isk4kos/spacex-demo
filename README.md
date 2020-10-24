@@ -8,6 +8,7 @@
 * express-graphql
 * express
 * axios
+* nodemon
 * cors
 
 ## Client
