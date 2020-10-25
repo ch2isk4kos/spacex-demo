@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
+import Launch from './Launch';
 
 const LAUNCHES_QUERY = gql`
   query LauncesQuery {
@@ -25,7 +26,16 @@ export class Launches extends Component {
               if (error) console.log(error)             // @TODO: add error message for user
               console.log("data: ", data)
               
-              return <h1>testing</h1>
+              // return <h1>testing</h1>
+              return (
+                <div>
+                  {
+                    data.launches.map(launch => {
+                      <Launch key={flight_launch_number} launch={launch} />
+                    })
+                  }
+                </div>
+              )
             }
           }
         </Query>
