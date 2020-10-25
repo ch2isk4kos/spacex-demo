@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import gql from 'graphql-tag';
-import { Query } from 'react-apollo';
+import { useQuery, gql } from '@apollo/client';
 import Launch from './Launch';
 
 const LAUNCHES_QUERY = gql`
@@ -13,8 +12,7 @@ const LAUNCHES_QUERY = gql`
     }
   }
 `
-
-export class Launches extends Component {
+class Launches extends Component {
   render() {
     return (
       <div>
