@@ -21,11 +21,11 @@ const Launches = () => {
   return (
     <>
       <h1 classNName="display-4 my-3">Launches</h1>
-        {
-          data.launches.map(launch => {
-             return <Launch key={launch.flight_number} launch={launch} />
-          })
-        }
+      {
+        data.launches.map(launch => {
+           return <Launch key={launch.flight_number} launch={launch} />
+        })
+      }
     </>
   )
 }
