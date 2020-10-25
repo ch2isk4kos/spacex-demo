@@ -19,14 +19,14 @@ const Launches = () => {
   if (error) return <h3>Something Went Wrong: {error.message}</h3>;     // @TODO: add error message for user
   console.log("data: ", data);
   return (
-    <div>
+    <>
       <h1 classNName="display-4 my-3">Launches</h1>
         {
           data.launches.map(launch => {
              return <Launch key={launch.flight_number} launch={launch} />
           })
         }
-    </div>
+    </>
   )
 }
 
