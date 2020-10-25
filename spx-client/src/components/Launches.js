@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery, gql } from '@apollo/client';
-import Launch from './Launch';
+import LaunchCard from './LaunchCard';
 
 const LAUNCHES_QUERY = gql`
   query LaunchesQuery {
@@ -23,7 +23,7 @@ const Launches = () => {
       <h1 classNName="display-4 my-3">Launches</h1>
       {
         data.launches.map(launch => {
-           return <Launch key={launch.flight_number} launch={launch} />
+           return <LaunchCard key={launch.flight_number} launch={launch} />
         })
       }
     </>
