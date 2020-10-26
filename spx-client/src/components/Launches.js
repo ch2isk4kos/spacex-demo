@@ -18,17 +18,17 @@ const Launches = () => {
   const { loading, error, data } = useQuery(LAUNCHES_QUERY);
   if (loading) return <h3>Loading...</h3>;                              // @TODO: add an animated loader
   if (error) return <h3>Something Went Wrong: {error.message}</h3>;     // @TODO: add error message for user
-  console.log("data: ", data);
+  console.log("launches: ", data);
   return (
-    <>
+    <div>
       <MissionKey />
-      <h1 classNName="display-4 my-3">Launches</h1>
+      <h1 className="display-4 my-3">Launches</h1>
       {
         data.launches.map(launch => {
            return <LaunchCard key={launch.flight_number} launch={launch} />
         })
       }
-    </>
+    </div>
   )
 }
 
