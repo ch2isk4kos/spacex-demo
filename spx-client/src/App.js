@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 // import logo from './spacex-logo.png';
+import Landing from './components/Landing';
 import Home from './components/Home';
 import Launches from './components/Launches';
 import Launch from './components/Launch';
@@ -14,7 +15,8 @@ function App() {
       {/* <Launches /> */}
       
       <Switch>
-        <Route exact path={"/"} component={Home} />
+        <Route exact path={"/"} component={Landing} />
+        <Route exact path={"/home"} component={Home} />
         <Route exact path={"/launches"} component={Launches} />
         <Route exact path={"/launches/:flight_number"} component={Launch} />
       </Switch>
