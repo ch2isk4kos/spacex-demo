@@ -77,7 +77,7 @@ const Launch = props => {
         </li>
       </ul>
       <hr />
-      <Link to="/" className="btn btn-secondary">
+      <Link to="/launches" className="btn btn-secondary">
         Back
       </Link>
     </div>
