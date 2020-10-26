@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery, gql } from '@apollo/client';
 import LaunchCard from './LaunchCard';
 import MissionKey from './MissionKey';
+import logo from '../spacex-logo.png';
 
 const LAUNCHES_QUERY = gql`
   query LaunchesQuery {
@@ -21,6 +22,7 @@ const Launches = () => {
   console.log("launches: ", data);
   return (
     <div>
+      <img src={logo} alt="SpaceX" style={{ width: "300", display: "block", margin: "auto" }} />
       <MissionKey />
       <h1 className="display-4 my-3">Launches</h1>
       {
