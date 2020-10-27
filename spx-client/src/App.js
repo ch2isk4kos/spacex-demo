@@ -7,13 +7,10 @@ import Launches from './components/Launches';
 import Launch from './components/Launch';
 import { Switch, Route } from 'react-router-dom';
 
-
 function App() {
   return (
     <div className="App">
-      
-      {/* <Launches /> */}
-      
+
       <Switch>
         <Route exact path={"/"} component={Landing} />
         <Route exact path={"/home"} component={Home} />
