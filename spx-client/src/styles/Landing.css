@@ -4,6 +4,7 @@
 
 .Landing {
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -23,7 +24,7 @@
 }
 
 .video-bg {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -32,7 +33,7 @@
 }
 
 .video-bg video {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -45,6 +46,10 @@
   text-align: center;
   z-index: 2;
   text-shadow: 1px 1px 1px #000;
+}
+
+.content img {
+  width: 50rem;
 }
 
 h1 {
