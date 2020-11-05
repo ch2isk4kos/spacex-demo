@@ -23,3 +23,6 @@ A React Application that fetches data from the SpaceX API using GraphQL.
 * @apollo-client
 * graphql
 
+## Fork
+
+> cd spx-server npm start
