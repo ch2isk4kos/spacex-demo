@@ -27,4 +27,7 @@ A React Application that fetches data from the SpaceX API using GraphQL.
 
 > cd spx-server npm start
 
-<br><br>
+<br><br>\
+
+> cd spx-client 
+> npm start
