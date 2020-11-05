@@ -1,6 +1,6 @@
 #React with GraphQL: SpaceX Demo
 
-A React Application that fetches data from the SpaceX API. 
+A React Application that fetches data from the SpaceX API using GraphQL. 
 
 ## Server
 
