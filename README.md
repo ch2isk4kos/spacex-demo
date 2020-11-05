@@ -10,9 +10,13 @@
 * axios
 * nodemon
 * cors
+* classnames
+* moment
+* react-moment
 
 ## Client
 
 **Client Packages**:
 
-* react-apollo
+* @apollo-client
+* graphql
