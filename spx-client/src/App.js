@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 // import logo from './spacex-logo.png';
 import Landing from './components/Landing';
-import Home from './components/Home';
+import Home from './components/home/Home';
 import Launches from './components/Launches';
 import Launch from './components/Launch';
 import { Switch, Route } from 'react-router-dom';
