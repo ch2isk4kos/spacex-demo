@@ -3,6 +3,7 @@ import { useQuery, gql } from '@apollo/client';
 import LaunchCard from './LaunchCard';
 import MissionKey from './MissionKey';
 import logo from '../spacex-logo.png';
+import '../styles/Launches.css'
 
 const LAUNCHES_QUERY = gql`
   query LaunchesQuery {
@@ -21,10 +22,10 @@ const Launches = () => {
   if (error) return <h3>Something Went Wrong: {error.message}</h3>;     // @TODO: add error message for user
   console.log("launches: ", data);
   return (
-    <div>
+    <div className="Launches">
       <img src={logo} alt="SpaceX" style={{ width: "300", display: "block", margin: "auto" }} />
       <MissionKey />
-      <h1 className="display-4 my-3">Launches</h1>
+      {/* <h1 className="display-4 my-3">Launches</h1> */}
       {
         data.launches.map(launch => {
            return <LaunchCard key={launch.flight_number} launch={launch} />
