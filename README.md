@@ -1,4 +1,4 @@
-# React with GraphQL: SpaceX Demo
+#React with GraphQL: SpaceX Demo
 
 ## Server
 
@@ -20,3 +20,5 @@
 
 * @apollo-client
 * graphql
+
+<br><br>
