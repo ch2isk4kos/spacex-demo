@@ -1,5 +1,7 @@
 #React with GraphQL: SpaceX Demo
 
+A React Application that fetches data from the SpaceX API. 
+
 ## Server
 
 **Server Packages**:
@@ -21,4 +23,3 @@
 * @apollo-client
 * graphql
 
-<br><br>
