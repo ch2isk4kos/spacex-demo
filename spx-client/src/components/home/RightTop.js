@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import ReactPlayer from 'react-player';
 
 const RightTop = () => {
   return (
     <>
-      <h1>Top</h1>
+      <ReactPlayer 
+        url="https://www.youtube.com/watch?v=P1uHNRIo68M"
+        playing={true}
+        height="100%"
+        width="100%" 
+      />
     </>
   )
 }
