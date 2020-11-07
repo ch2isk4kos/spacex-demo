@@ -1,6 +1,6 @@
 import React from 'react';
 import Left from './Left';
-import RightTop from './RightTop';
+import Video from './Video';
 import RightBottom from './RightBottom';
 import '../../styles/Home.css'
 
@@ -12,7 +12,7 @@ const Home = () => {
       </div>
       <div className="home-right">
         <div className="right-top">
-          <RightTop />
+          <Video />
         </div>
         <div className="right-bottom"> 
           <RightBottom />
